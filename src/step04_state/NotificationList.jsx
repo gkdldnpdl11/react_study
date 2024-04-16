@@ -48,6 +48,7 @@ class NotificationList extends React.Component{
         }, 1000);
     }
 
+    // 생명주기 종료
     componentWillUnmount(){
         if (timer) {
             clearInterval(timer);

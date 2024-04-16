@@ -10,8 +10,6 @@ import Comment from './step03_component/Comment';
 import CommentList from './step03_component/CommentList';
 import NotificationList from './step04_state/NotificationList';
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // UI를 업데이트하는 유일한 방법은 새로운 엘리먼트를 생성하고 이를 root.rander로 전달하는 것임
@@ -35,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Library />
+    <NotificationList />
   </React.StrictMode>
 );  
 
