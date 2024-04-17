@@ -25,9 +25,9 @@ class Count extends React.Component{
     render(){
         return(
             <div>
-                <Button variant="contained" color="primary" size="large" onClick={this.increment.bind(this)}>+</Button>
+                <Button variant="contained" color="primary" size="large" onClick={this.increment.bind(this)}> + </Button>
                 <Box component='span' m={5}> {this.state.cnt} </Box>
-                <Button variant="contained" color="primary" size="large" onClick={this.decrement.bind(this)}>-</Button>
+                <Button variant="contained" color="primary" size="large" onClick={this.decrement.bind(this)}> - </Button>
             </div>
         )
     }

@@ -21,6 +21,7 @@ import SmartHome from './step06_hook/SmartHome';
 import SmartHome2 from './step06_hook/SmartHome2';
 import TextInput from './step06_hook/TextInput';
 import VideoExam from './step06_hook/VideoExam';
+import ShowState from './step06_hook/ShowState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -35,29 +36,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // }, 1000);
 
 root.render(
+    // <Counter />
+    // <Counter2 />
+    // <Counter3 />
+    // <Counter4 />
+    // <SmartHome />
     // <SmartHome2 />
     // <TextInput />
     // <VideoExam />
-    <Counter4 />
-
-
-    // <React.StrictMode>
-  //   {/* <Library /> */}
-  //   {/* <CommentList /> */}
-  //   {/* <Welcome name="Sara" /> */}
-  //   {/* <Welcome name="Cahal" /> */}
-  //   {/* <Welcome name="Edite" /> */}
-  //   {/* <NotificationList /> */}
-  //   {/* <Count /> */}
-  //   {/* <Customer id="sh" name="lee" orders={['A001', 'B002', 'C003']} /> */}
-  //   {/* <BookList books={Books} /> */}
-  //   {/* <Counter /> */}
-  //   {/* <Counter2 /> */}
-  //   {/* <Counter3 /> */}
-  //   {/* <Counter4 /> */}
-  //   {/* <SmartHome /> */}
     
-  // </React.StrictMode>
 );  
 
 // If you want to start measuring performance in your app, pass a function

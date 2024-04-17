@@ -7,7 +7,7 @@ class BookList extends Component{
         // 원래 사용하는 방식
         // const books = this.props.books;
 
-        // 구조 분해 할당 방식, 이 방식으로 사용
+        // 위의 방식에서 구조 분해 할당 방식으로 변경, 이 방식으로 사용
         const {books} = this.props;
         const bookItems = books.map((k) => {
             return(

@@ -13,6 +13,7 @@ function Counter2(props) {
         const newName = name === 'hong' ? 'kim' : 'hong';
         setName(newName);
     }
+    
     return(
         <div>
             <div>{count2}</div>

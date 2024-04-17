@@ -2,7 +2,10 @@ import React, { useState } from "react";
 
 function Counter(props) {
     // let count = 0;
+
+    // useState 사용 방식
     // const [변수명, set변수명(첫글자 대문자)] = useState(초기값);
+    // set변수명 = 기존 변수명에 저장된 데이터를 변경된 데이터를 저장할 변수 생성임
     const [count, setCount] = useState(0);
     return(
         <div>
