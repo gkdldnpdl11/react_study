@@ -9,6 +9,18 @@ import Welcome from './step03_component/Welcome';
 import Comment from './step03_component/Comment';
 import CommentList from './step03_component/CommentList';
 import NotificationList from './step04_state/NotificationList';
+import Count from './step04_state/Count';
+import Customer from './step05_prop/Customer';
+import BookList from './step05_prop/BookList';
+import Books from './static-data/Books';
+import Counter from './step06_hook/Counter';
+import Counter2 from './step06_hook/Counter2';
+import Counter3 from './step06_hook/Counter3';
+import Counter4 from './step06_hook/Counter4';
+import SmartHome from './step06_hook/SmartHome';
+import SmartHome2 from './step06_hook/SmartHome2';
+import TextInput from './step06_hook/TextInput';
+import VideoExam from './step06_hook/VideoExam';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,19 +34,30 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   );  
 // }, 1000);
 
-// component 합성 
-// root.render(
-//   <React.StrictMode>
-//     <Welcome name="Sara" />
-//     <Welcome name="Cahal" />
-//     <Welcome name="Edite" />
-//   </React.StrictMode>
-// );  
-
 root.render(
-  <React.StrictMode>
-    <NotificationList />
-  </React.StrictMode>
+    // <SmartHome2 />
+    // <TextInput />
+    // <VideoExam />
+    <Counter4 />
+
+
+    // <React.StrictMode>
+  //   {/* <Library /> */}
+  //   {/* <CommentList /> */}
+  //   {/* <Welcome name="Sara" /> */}
+  //   {/* <Welcome name="Cahal" /> */}
+  //   {/* <Welcome name="Edite" /> */}
+  //   {/* <NotificationList /> */}
+  //   {/* <Count /> */}
+  //   {/* <Customer id="sh" name="lee" orders={['A001', 'B002', 'C003']} /> */}
+  //   {/* <BookList books={Books} /> */}
+  //   {/* <Counter /> */}
+  //   {/* <Counter2 /> */}
+  //   {/* <Counter3 /> */}
+  //   {/* <Counter4 /> */}
+  //   {/* <SmartHome /> */}
+    
+  // </React.StrictMode>
 );  
 
 // If you want to start measuring performance in your app, pass a function
