@@ -43,7 +43,7 @@ root.render(
     // <SmartHome />
     // <SmartHome2 />
     // <TextInput />
-    // <VideoExam />
+    <VideoExam />
     
 );  
 
