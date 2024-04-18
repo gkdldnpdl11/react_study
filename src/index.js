@@ -7,6 +7,13 @@ import Ex01 from './step09_list/Ex01';
 import Ex02 from './step09_list/Ex02';
 import NameForm from './step10_form/NameForm';
 import SelectForm from './step10_form/SelectForm';
+import Lib from './test/Lib';
+import Comm from './test/Comm';
+import Welcome1 from './test/Welcome1';
+import Count1 from './test/Count1';
+import Sam from './test/Sam';
+import Sam2 from './test/Sam2';
+import List from './test/List';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +29,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // }, 1000);
 
 root.render(
+
+    // 내가하는곳
+    // <Lib />
+    // <Comm /> 나중에함
+    // <Welcome1 name="kim" />
+    // <Count1 />
+    // <Sam />
+    // <Sam2 />
+    // <List list={[1,2,3,4,5]} />
+    
+
     // <Counter />
     // <Counter2 />
     // <Counter3 />
@@ -52,7 +70,7 @@ root.render(
     // <Ex01 list={[1,2,3,4,5]} />
     // <Ex02 />
     // <NameForm />
-    <SelectForm />
+    // <SelectForm />
     
 );  
 

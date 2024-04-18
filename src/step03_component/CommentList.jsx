@@ -17,7 +17,7 @@ const comments =[
         comment : "Hello 3"
     },
     {
-        name : "Choi",
+        name : "kim1",
         comment : "Hello 4"
     }
 ];
