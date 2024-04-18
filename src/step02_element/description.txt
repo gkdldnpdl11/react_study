@@ -1,0 +1,61 @@
+SPA(Single Page Application) : 
+	서버로부터 단일 페이지를 응답 받고 클라이언트에서 화면을 구성하는 방식
+	클라이언트는 서버에 데이터(json)을 요청하고 응답 받는 데이터를 이용하여 화면을 갱신
+
+JSX : javascript 확장 문법 = javascript + xml/html
+	react element를 생성, element는 화면을 구성하는 요소를 의미한다
+	react에서는 React.createElement()를 이용하여 JSX를 javascript로 변환시킴
+
+1. JSX에서 표현식 : 변수나 javascript를 사용할 때 중괄호{}로 감싼다
+	ex01)
+	javascript		     : const name = 'Josh Perez';
+	javascript+html=JSX : const element = <h1>Hello, {name}</h1>;
+
+	ex02)
+	function formatName(user) {
+	  return user.firstName + ' ' + user.lastName;
+	}
+
+	const user = {
+	  firstName: 'Harper',
+	  lastName: 'Perez'
+	};
+
+	const element = (
+	  <h1>
+	    Hello, {formatName(user)}!
+	  </h1>
+	);
+
+	컴파일 후, JSX 표현식이 정규 js 함수 호출이 되고, 객체로 인식된다
+	즉 if문, for loop 안에서 사용하고, 변수에 할당하고, 인자로 받아들이고, 함수 반환도 가능하다
+
+	JSX 자식 정의 : 빈 태그가 있으면 xml에서 처럼 태그 마지막에 '/' 를 이용하여 닫아주어야 함
+	ex) <div />, <button />
+
+	태그가 2개 이상일 떄는 <div></div>를 사용하여 하위요소로 생성하여 <div> 자체를 감싸서 리턴한다. 
+	리턴은 하나밖에 할 수 없어서 <div>의 하위 요소들을 묶어서 사용
+
+
+2. element : 리액트 앱의 가장 작은 단위(블록)
+	리액트에서의 element는 불변 객체이다.
+	element 생성 이후에는 해당 엘리먼트의 자식이나 속성을 변경할 수 없다. 
+	엘리먼트는 영화에서 하나의 프레임과같은 UI를 보여줌
+
+	UI를 업데이트하는 유일한 방법은 새로운 element를 생성하고 이를 root.render()로 전달하는 것임
+
+
+3. state : react component의 상태를 의미한다
+	컴포넌트의 변경 가능한 데이터를 state라고 부른다
+	state는 javascript의 객체임
+	state는 직접적인 변경이 불가
+	state를 변경하고자 할 때는 setState()란 함수를 사용해야한다
+
+
+4. 생명주기 :
+	컴포넌트 생성 시점 : 마운트 => componentDidMount()
+	컴포넌트 사용 시기 : 업데이트 => componentDidUpdate()
+	컴포넌트 종료 시점 : 언마운트 => componentDidUnMount()
+	
+	마운트, 언마운트는 한번만 실행된다
+	업데이트는 render라고 생각하면됨 (여러번 실행 가능)

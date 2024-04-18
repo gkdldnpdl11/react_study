@@ -3,29 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Library from './step01_jsx/Library';
-import Clock from './step02_element/Clock';
-import Welcome from './step03_component/Welcome';
-import Comment from './step03_component/Comment';
-import CommentList from './step03_component/CommentList';
-import NotificationList from './step04_state/NotificationList';
-import Count from './step04_state/Count';
-import Customer from './step05_prop/Customer';
-import BookList from './step05_prop/BookList';
-import Books from './static-data/Books';
-import Counter from './step06_hook/Counter';
-import Counter2 from './step06_hook/Counter2';
-import Counter3 from './step06_hook/Counter3';
-import Counter4 from './step06_hook/Counter4';
-import SmartHome from './step06_hook/SmartHome';
-import SmartHome2 from './step06_hook/SmartHome2';
-import TextInput from './step06_hook/TextInput';
-import VideoExam from './step06_hook/VideoExam';
-import ShowState from './step06_hook/ShowState';
+import Ex01 from './step09_list/Ex01';
+import Ex02 from './step09_list/Ex02';
+import NameForm from './step10_form/NameForm';
+import SelectForm from './step10_form/SelectForm';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// UI를 업데이트하는 유일한 방법은 새로운 엘리먼트를 생성하고 이를 root.rander로 전달하는 것임
+// UI를 업데이트하는 유일한 방법은 새로운 엘리먼트를 생성하고 이를 root.render로 전달하는 것임
 // 1초마다 한번씩 생성, 시계할때만 사용함
 // setInterval(() => {
 //   root.render(
@@ -43,7 +29,30 @@ root.render(
     // <SmartHome />
     // <SmartHome2 />
     // <TextInput />
-    <VideoExam />
+    // <VideoExam />
+    // <Sample01 />
+    // <Sample02 />
+    // <Sample03 />
+    // <Sample04 />
+    // <Sample05 />
+
+    // 여기에서부터
+        // <Ex01 isLoggedIn="false" /> =>  이런식으로 사용하면 문자를 사용한것으로 인식하고, 문자는 무조건 true로 인식함
+        // <Ex01 isLoggedIn="" /> => false
+        // <Ex01 isLoggedIn="내용" /> => true
+        // <Ex01 isLoggedIn={true} />
+        // <Ex02 isLoggedIn={false} />
+        // <Ex03 />
+        // <Ex04 msg={[1,2]} />
+        // <Ex05 />
+        // <Ex06 />
+        // <Ex07 />     
+    // 여기까지 step08 폴더
+
+    // <Ex01 list={[1,2,3,4,5]} />
+    // <Ex02 />
+    // <NameForm />
+    <SelectForm />
     
 );  
 
