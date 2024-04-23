@@ -37,8 +37,7 @@ function Ex02(props) {
     return(
         <ul>{msg.map((k)=>{
             return(
-                <li key={k.idx}> name : {k.name}
-                <br /> age : {k.age}</li>
+                <li key={k.idx}>{k.name}({k.age})</li>
             )
         })}</ul>
     )

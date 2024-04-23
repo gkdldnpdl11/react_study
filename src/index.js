@@ -70,7 +70,7 @@ root.render(
     // <Ex01 list={[1,2,3,4,5]} />
     // <Ex02 />
     // <NameForm />
-    // <SelectForm />
+    <SelectForm />
     
 );  
 
